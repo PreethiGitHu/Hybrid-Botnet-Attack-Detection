@@ -132,4 +132,6 @@ Recall    = TP / (TP + FN)
 🧪 **Sample Output Screens**
 
 
+<img width="453" height="363" alt="Image" src="https://github.com/user-attachments/assets/185f9a87-87ad-4f8f-9a4e-46fce76ec01c" />
+
   
