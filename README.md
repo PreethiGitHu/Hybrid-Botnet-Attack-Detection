@@ -1,14 +1,10 @@
-🛡️ Hybrid Deep Learning for Botnet Attack Detection in IoT Networks
+🛡️ **Hybrid Deep Learning for Botnet Attack Detection in IoT Networks**
 
-🎓 Final Year Project
-👩‍💻 S. Preethi
-📅 2022–2023
+📌**Project Overview**
 
-📌 Project Overview
+With the rapid growth of IoT devices, botnet attacks like **DDoS, DoS, Reconnaissance, and Information Theft** have increased drastically.
 
-With the rapid growth of IoT devices, botnet attacks like DDoS, DoS, Reconnaissance, and Information Theft have increased drastically.
-
-This project proposes a Hybrid Deep Learning model using:
+This project proposes a **Hybrid Deep Learning model** using:
 
 🔹 PCA (Dimensionality Reduction)
 
@@ -18,107 +14,100 @@ This project proposes a Hybrid Deep Learning model using:
 
 🔹 CNN
 
-To efficiently detect botnet attacks in resource-constrained IoT environments.
+To efficiently detect botnet attacks in **resource-constrained IoT environments**.
 
-📂 Dataset Used: Bot-IoT Dataset
+📂 Dataset Used: **Bot-IoT Dataset**
 
-🧠 Problem Statement
+🧠 **Problem Statement**
 
-IoT devices:
+**IoT devices:**
 
-Have limited memory ⚠️
++ Have limited memory ⚠️
 
-Cannot handle high-dimensional traffic data ❌
++ Cannot handle high-dimensional traffic data ❌
 
-Are vulnerable to botnet attacks 🦠
++ Are vulnerable to botnet attacks 🦠
 
-We solve this by:
+**We solve this by**:
 
-Reducing feature dimensions
++ Reducing feature dimensions
 
-Building a lightweight hybrid deep learning model
++ Building a lightweight hybrid deep learning model
 
-Achieving high detection accuracy 🎯
++ Achieving high detection accuracy 🎯
 
-🏗️ System Architecture
-4
-🔄 Workflow
+🏗️ **System Architecture**
+
+
+🔄 **Workflow**
 
 1️⃣ Data Selection
+
 2️⃣ Data Preprocessing
+
 3️⃣ Normalization
+
 4️⃣ PCA (Dimensionality Reduction)
+
 5️⃣ Autoencoder
+
 6️⃣ LSTM & CNN Classification
+
 7️⃣ Performance Evaluation
 
-📊 Dataset Information
+⚙️ **Technologies Used**
 
-📌 Dataset: Bot-IoT
+| Component    | Technology                  |
+| ------------ | --------------------------- |
+| Language     | 🐍 Python                   |
+| IDE          | Anaconda Navigator – Spyder |
+| ML Libraries | Scikit-learn                |
+| DL Framework | TensorFlow / Keras          |
+| OS           | Windows 7                   |
 
-📈 Original Features: 43
+🔬 **Modules Description**
 
-💾 Original Size: 1.085 GB
+📌 **1. Data Selection**
 
-🎯 Attack Categories:
++ Loaded Bot-IoT dataset
 
-DDoS
++ Selected relevant attack traffic features
 
-DoS
+ 🧹**2. Data Preprocessing**
 
-Reconnaissance
++ Missing value removal
 
-Information Theft
++ Label Encoding
 
-⚙️ Technologies Used
-Component	Technology
-Language	🐍 Python
-IDE	Anaconda Navigator – Spyder
-ML Libraries	Scikit-learn
-DL Framework	TensorFlow / Keras
-OS	Windows 7
-🔬 Modules Description
-📌 1. Data Selection
++ Duplicate removal
 
-Loaded Bot-IoT dataset
+📏**3. Normalization**
 
-Selected relevant attack traffic features
++ MinMax Scaling (0–1)
 
-🧹 2. Data Preprocessing
++ Standard Scaling
 
-Missing value removal
+📉 **4. Dimensionality Reduction**
 
-Label Encoding
++ PCA reduces high-dimensional features
 
-Duplicate removal
++ Removes noise & redundant information
 
-📏 3. Normalization
+🧬 **5. Autoencoder**
 
-MinMax Scaling (0–1)
++ Encoder + Decoder architecture
 
-Standard Scaling
++ Learns compressed feature representation
 
-📉 4. Dimensionality Reduction
++ Lightweight memory usage
 
-PCA reduces high-dimensional features
+🤖 **6. Classification**
 
-Removes noise & redundant information
++ 🔁 LSTM (Sequential Pattern Detection)
 
-🧬 5. Autoencoder
++ 🧱 CNN (Feature Extraction)
 
-Encoder + Decoder architecture
-
-Learns compressed feature representation
-
-Lightweight memory usage
-
-🤖 6. Classification
-
-🔁 LSTM (Sequential Pattern Detection)
-
-🧱 CNN (Feature Extraction)
-
-🧮 Performance Metrics
+🧮 **Performance Metrics**
 
 We evaluate using:
 
@@ -129,3 +118,17 @@ We evaluate using:
 ✅ Recall
 
 ✅ F1 Score
+
+✅ Confusion Matrix
+
+📌 **Formulas**
+
+Accuracy  = (TP + TN) / (TP + TN + FP + FN)
+
+Precision = TP / (TP + FP)
+
+Recall    = TP / (TP + FN)
+
+🧪 **Sample Output Screens**
+
+  
